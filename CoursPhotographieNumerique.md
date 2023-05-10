@@ -12,9 +12,38 @@ Aujourd'hui, les appareils photo numériques sont beaucoup plus performants. Ils
 
 ## Qu'est ce qu'un Pixel ?
 
-Un pixel est un point de l'image. Il est défini par sa position et sa couleur. La couleur est définie par un triplet de valeurs RVB (Rouge, Vert, Bleu). Chaque valeur est comprise entre 0 et 255. 0 correspond à l'absence de couleur et 255 à la couleur la plus intense.
+Un pixel est un point de l'image. Il est défini par sa position et sa couleur. Sa valeur représente la couleur du pixel. Plus la valeur est grande, plus le pixel est clair. Plus la valeur est petite, plus le pixel est foncé. La valeur d'un pixel dépend du mode de représentation de l'image.
 
-> Exemple : 🟥 correspondrait à un pixel de valeur (255, 0, 0)
+### Noir et blanc
+
+![noir et blanc](./noir_et_blanc.jpg)
+
+Pour représenter une image uniquement en noir et blanc, on n'a pas besoin de beaucoup de valeurs différentes. On peut utiliser un seul bit pour représenter la couleur d'un pixel.
+
+*Comment pourrait-on représenter ça en mémoire ?*
+
+...............................................................................................................................................
+
+### Niveaux de gris
+
+![niveaux de gris](./niveaux_de_gris.jpg)
+
+On veut maintenant représenter une image en différents niveaux de gris on a donc besoin de plus de valeurs différentes. On aura besoin d'utiliser 8 bits pour représenter la couleur d'un pixel.
+
+*Comment pourrait-on représenter ça en mémoire ?*
+
+...............................................................................................................................................
+
+### Couleurs
+
+![couleurs](./couleurs.jpg)
+
+Enfin, pour des images en couleurs, on a besoin de beaucoup de valeurs différentes. On peut utiliser 24 bits pour représenter la couleur d'un pixel. On utilise généralement 8 bits pour chaque couleur primaire (rouge, vert, bleu). On appelle ce mode de représentation RVB (Rouge, Vert, Bleu). Dans ce cas chaque couleur est représentée par un nombre entre 0 et 255. On ne peut donc représenter qu'un nombre limité de couleurs mais c'est suffisant pour l'oeil humain.
+
+> Exemple :
+> 🟥 correspondrait à un pixel de valeur (255, 0, 0) ;
+> 🟩 correspondrait à un pixel de valeur (0, 255, 0) ;
+> 🟦 correspondrait à un pixel de valeur (0, 0, 255) ;
 
 ## Composition d'une image
 
@@ -46,6 +75,8 @@ Pour tester le fonctionnement d'une image numérique, vous pouvez utiliser le si
 ### **Questions 1**
 
 Combien de couleurs différentes peut-on former avec un pixel RVB ?
+
+...............................................................................................................................................
 
 ### **Questions 2**
 
@@ -93,9 +124,13 @@ Quelle est la résolution de l'image `Exercice1.jpg` si on l'imprime en 5,08 x 5
 
 Rappel : 1 pouce = 2,54 cm
 
+.......................................................................................................................................................
+
 ### **Question 4**
 
 Comment obtenir une resolution de 300 ppp pour l'image `Exercice1.jpg` ?
+
+.......................................................................................................................................................
 
 ## Pour aller plus loin
 
